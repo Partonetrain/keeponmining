@@ -1,0 +1,7 @@
+{
+  "keeponmining.configuration.title": "Keep On Mining",
+  "keeponmining.configuration.section.keeponmining.client.toml": "Keep On Mining",
+  "keeponmining.configuration.section.keeponmining.client.toml.title": "Keep On Mining",
+  "keeponmining.configuration.miningTickDelay": "Mining Tick Delay",
+  "keeponmining.configuration.miningTickDelay.tooltip": "Number of ticks between breaking a block and starting to break the next one"
+}

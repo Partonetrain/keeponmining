@@ -1,25 +1,15 @@
+# KeepOnMining
 
-Installation information
-=======
+If you don't break a block instantly, then there is a 5-tick cooldown between breaking a block and starting to break the next one.
+This mod simply makes this cooldown configurable, with the delay being set to 0 by default.
+The delay can be changed any time in-game by accessing the mod's config menu.
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+This mod will do nothing if installed on a dedicated server.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+## Warning
+This is a purely client-side mod, but server software can detect that you're breaking blocks faster than you should be able to.
+Only use this mod on servers that explicitly allow it. I am not responsible for any punishments doled out by server admins as a result of using this mod.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
-
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+### Q: Why is this a whole mod / why isn't this just a feature in Train's Tweaks?
+A: Firstly, there are already mods which achieve this on Fabric 1.21, but not on NeoForge. Since I want all Train's Tweaks features to work near-identically on both platforms and there's no reason to implement it on Fabric, a new mod for NeoForge is the answer.
+Second, since servers may consider this mod cheating, a single mod makes the cause easier to identify. 
